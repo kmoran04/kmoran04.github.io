@@ -101,8 +101,8 @@ const Home: React.FC<IHomeProps> = (props) => {
           <TopBorder />
           <MainLogoWrapper onClick={scrollTop}><TextLogo /></MainLogoWrapper>
           <WelcomeWrapper>welcome!</WelcomeWrapper>
-          <SecondaryWrapper>this is my website.</SecondaryWrapper>
-          <ClosingWrapper>please hire me.</ClosingWrapper>
+          <SecondaryWrapper>i'm a front end developer.</SecondaryWrapper>
+          <ClosingWrapper>this is my website.</ClosingWrapper>
           <Middle />
           <Parallax />
           <NavBar setSelected={setSelectedTab} 
