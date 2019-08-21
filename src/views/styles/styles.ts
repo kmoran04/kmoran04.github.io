@@ -166,7 +166,7 @@ export const ContactWrapper = styled(ProjectsWrapper)`
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    padding: 100px 0px 100px;
+    padding: 50px 0px 50px;
     width: 100vw;
 `;
 
