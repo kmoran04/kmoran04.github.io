@@ -6,7 +6,12 @@ interface IToggleProps {
 }
 
 const Toggle: React.FC<IToggleProps> = (props) => { 
-const [isDarkMode, setDarkMode] = useState(false);
+
+const stored = localStorage.getItem('isDarkMode');
+
+const [isDarkMode, setDarkMode] = useState(
+  stored === 'true' ? true : false
+);
 
 const onToggle = () => {
     setDarkMode(!isDarkMode);
@@ -15,7 +20,7 @@ const onToggle = () => {
 
   return (
       <ToggleWrapper onClick={onToggle}>
-        {!isDarkMode ? <DarkIcon /> : <LightIcon />}
+        {isDarkMode ? <DarkIcon /> : <LightIcon />}
     </ToggleWrapper>
   );
 }
