@@ -22,10 +22,6 @@ const HowIGotHere: React.FC = () => {
           <ResumeBullet>Applied the new brand identity to collateral, including infographics, T-shirts, custom Snapchat filters, event posters, and social media graphics</ResumeBullet>
           </ul>
         </ResumeItemInfo>
-        <ResumeItemTitle>Orientation Coordinator, Social Media & Communications</ResumeItemTitle>
-        <ResumeItemSubtitle>Office for Campus Life at Tufts University</ResumeItemSubtitle>
-        <ResumeItemDate>June - September 2018</ResumeItemDate>
-        <ResumeItemInfo>hey now!</ResumeItemInfo>
 
       </AboutWrapper>
 

@@ -141,11 +141,11 @@ export const PageWrapper = styled.div`
 `;
 
 export const ProjectsWrapper = styled.div`
-    padding-top: 10vh;
+    padding-top: 15vh;
     z-index: 2;
     background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
     transform: translate3d(0,0,0);
-    width: 75vw;
+    width: 80vw;
     margin: auto;
 `;
 
@@ -154,7 +154,6 @@ export const PathWrapper = styled(ProjectsWrapper)`
 `;
 
 export const AboutMeWrapper = styled(ProjectsWrapper)`
-
 `;
 
 export const EducationWrapper = styled(ProjectsWrapper)`

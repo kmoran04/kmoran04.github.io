@@ -44,7 +44,6 @@ export const AboutWrapper = styled.div`
     margin-top: 5vh;
     border-left: 5px solid ${props => props.theme.colors.SIDEBAR};
     text-align: left;
-    margin-bottom: 10vh;
     margin-right: 10vh;
 `;
 

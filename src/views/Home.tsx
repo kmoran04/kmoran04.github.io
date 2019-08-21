@@ -15,8 +15,8 @@ interface IHomeProps {
   toggleDarkMode: () => void;
 }
 
-const inView = (rect: ClientRect | DOMRect) => {
-  return rect.top >= -120;
+const inView = (rect: ClientRect | DOMRect, height: number) => {
+  return rect.top >= height/2 - height;
 }
 
 const topView = (rect: ClientRect | DOMRect) => {
@@ -66,7 +66,7 @@ const Home: React.FC<IHomeProps> = (props) => {
           const educationRect = education.getBoundingClientRect();
           const contactRect = contact.getBoundingClientRect();
 
-          if (inView(aboutRect)) {
+          if (inView(aboutRect, aboutRect.height)) {
             if (topView(aboutRect)) {
               setSelectedTab('');
             }
@@ -74,16 +74,16 @@ const Home: React.FC<IHomeProps> = (props) => {
               setSelectedTab('about');
             }
           }
-          else if (inView(projRect)) {
+          else if (inView(projRect, projRect.height)) {
             setSelectedTab('projects');
           }
-          else if (inView(pathRect)) {
+          else if (inView(pathRect, pathRect.height)) {
             setSelectedTab('path');
           }
-          else if (inView(educationRect)) {
+          else if (inView(educationRect, educationRect.height)) {
             setSelectedTab('education');
           }
-          else if (inView(contactRect)) {
+          else if (inView(contactRect, contactRect.height)) {
             setSelectedTab('contact');
           }
           else {
