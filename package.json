@@ -2,8 +2,10 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://kmoran04.github.io",
+  "homepage": "http://kmoran04.github.io",
   "dependencies": {
+    "@progress/kendo-drawing": "^1.5.12",
+    "@progress/kendo-react-pdf": "^3.2.2",
     "@types/jest": "24.0.17",
     "@types/node": "12.7.1",
     "@types/overlayscrollbars": "^1.9.0",
@@ -24,7 +26,7 @@
   "scripts": {
     "start": "react-scripts start",
     "predeploy": "npm run build",
-     "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -b master -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

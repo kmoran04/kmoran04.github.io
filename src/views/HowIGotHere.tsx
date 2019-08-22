@@ -13,7 +13,7 @@ const HowIGotHere: React.FC = () => {
         <ResumeItemDate>June - August 2019</ResumeItemDate>
         <ResumeItemInfo><ul>
           <ResumeBullet>Built features in React and TypeScript for a v1.1 release of a company-wide web app used by 150 employees every week</ResumeBullet>
-          <ResumeBullet>Translated high-priority user pain points idenfitiied in usability testing into actionable user stories</ResumeBullet>
+          <ResumeBullet>Translated high-priority user pain points identified in usability testing into actionable user stories</ResumeBullet>
           <ResumeBullet>Collaborated across a team of designers and developers to create UI components that fulfill a mockup with team-wide code review</ResumeBullet>
           </ul></ResumeItemInfo>
 
