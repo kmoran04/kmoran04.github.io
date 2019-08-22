@@ -48,7 +48,7 @@ export const AboutWrapper = styled.div`
 `;
 
 export const Photo = styled.img`
-    box-shadow: 1vw 1vw ${props => props.theme.colors.PHOTO_SHADOW};
+    box-shadow: 20px 20px ${props => props.theme.colors.PHOTO_SHADOW};
     height: 28vw;
     margin-left: 4vw;
     margin-bottom: 10vh;

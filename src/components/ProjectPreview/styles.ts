@@ -14,8 +14,8 @@ export const ProjectPreviewOverlay = styled.div`
 `;
 
 export const ProjectPhoto = styled.img`
-    width: inherit;
-    height: 30vh;
+    height: 15rem;
+    width: 100%;
     overflow: hidden;
     filter: blur(1px);
     transition: .3s ease;
@@ -25,7 +25,6 @@ export const ProjectPhoto = styled.img`
 
 export const ProjectPreviewWrapper = styled.a`
     position: relative;
-    width: 30vw;
     border-radius: 5px;
     margin-left: 4vw;
     margin-top: 5vh;

@@ -21,8 +21,8 @@ const HowIGotHere: React.FC = () => {
         <ResumeItemSubtitle>TUSC Marketing at Tufts University</ResumeItemSubtitle>
         <ResumeItemDate>May 2017 - present</ResumeItemDate>
         <ResumeItemInfo><ul>
-          <ResumeBullet>Collaborated constantly with other sub-groups of TUSC (Tufts University Social Collective) to create advertising and marketing plans for their events</ResumeBullet>
-          <ResumeBullet>Defined the brand of TUSC during the rebrand period</ResumeBullet>
+          <ResumeBullet>Collaborated constantly with other sub-groups of TUSC (Tufts University Social Collective) to create advertising and marketing plans for 100+ events for all 5000+ students</ResumeBullet>
+          <ResumeBullet>Defined the visual brand of TUSC during the rebrand period, setting guidelines for other graphic designers and social media managers</ResumeBullet>
           <ResumeBullet>Applied the new brand identity to collateral, including infographics, T-shirts, custom Snapchat filters, event posters, and social media graphics</ResumeBullet>
           </ul>
         </ResumeItemInfo>

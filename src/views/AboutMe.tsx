@@ -13,7 +13,7 @@ const AboutMe: React.FC = () => {
             I can combine my <b>background in graphic design</b> and my <b>studies in programming</b>. 
             Formal education in design principles and <b>UI/UX</b> has strengthened my design instincts 
             and allows me to build beautiful products from scratch. </Paragraph>
-            <Photo src='/../webphoto.png'/>
+            <Photo src='/../webphoto.jpg'/>
             </PhotoWrapper>
         </AboutWrapper>
     </AboutMeWrapper>
