@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
 
         <IconWrapper>
           <EmailIcon />
-          <ContactInfoWrapper href='mailto:kristenemoran@gmail.com' target='' title='left'>
+          <ContactInfoWrapper href='mailto:kristenemoran@gmail.com' target='' title='email'>
           <SocialLogoWrapper><TextLogo /></SocialLogoWrapper>
           <ContactMedium>@gmail.com</ContactMedium>
           </ContactInfoWrapper>
@@ -19,7 +19,7 @@ const Contact: React.FC = () => {
 
       <IconWrapper>
       <LinkedinIcon />
-        <ContactInfoWrapper href='https://www.linkedin.com/in/kristenemoran' target='_blank' title='right'>
+        <ContactInfoWrapper href='https://www.linkedin.com/in/kristenemoran' target='_blank' title='linkedin'>
           <ContactMedium>linkedin.com/in/</ContactMedium>
           <SocialLogoWrapper><TextLogo /></SocialLogoWrapper>
         </ContactInfoWrapper>

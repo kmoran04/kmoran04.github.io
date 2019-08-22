@@ -109,13 +109,13 @@ export const ContactInfoWrapper = styled.a`
 
             ${ContactMedium} {
                 color: ${props => props.theme.colors.CONTACT_MEDIUM_HOVER};
-                ${props => props.title === 'left' ?
+                ${props => props.title === 'email' ?
                     `margin-left: ${emailTextMargin}` :
                     `margin-right: ${linkedinTextMargin}`};
             }
             ${SocialLogoWrapper} {
                 background-color: ${props => props.theme.colors.LOGO_BACKGROUND_HOVER};
-                ${props => props.title === 'left' ?
+                ${props => props.title === 'email' ?
                     `padding-right: ${emailPadding}` :
                     `padding-left: ${linkedinPadding}`};           
             }
