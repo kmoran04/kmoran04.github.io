@@ -31,7 +31,7 @@ export const TitleB = styled(TitleA)`
 `;
 
 export const TitleC = styled(TitleB)`
-    font-size: 3.5vh;
+    font-size: 3.5vw;
 `;
 
 export const NavBarHeader = styled.button`
