@@ -74,7 +74,7 @@ const Home: React.FC<IHomeProps> = (props) => {
           secondary.style.opacity = '1';
           parallax.style.opacity = '1';
           filler.style.opacity = '1';
-
+          closing.style.height = 'initial';
 
         }
         else {
@@ -85,6 +85,8 @@ const Home: React.FC<IHomeProps> = (props) => {
 
           closing.style.position = 'fixed';
           closing.style.top = '5px';
+          closing.style.height = '10px';
+
 
         }
       }

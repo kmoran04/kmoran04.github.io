@@ -3,8 +3,8 @@ import { NavBarHeader } from '../../constants/titles';
 
 export const NavBarWrapper = styled.div`
     background-color: ${props => props.theme.colors.NAV_BAR_BACKGROUND};
-    height: 10.5vh;
     display: flex;
+    height: 10.5vh;
     align-items: center;
     padding-left: 5vw;
     z-index: 5;
@@ -19,6 +19,10 @@ export const NavBarWrapper = styled.div`
         top: 0px;
         width: 100vw;
         height: 50px;
+    }
+
+    @media (max-width: 1200px) {
+        height: 10.5vh;
     }
 `;
 
