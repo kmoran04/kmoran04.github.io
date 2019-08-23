@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBarWrapper, MenuOption, NavBarPadding } from './styles';
+import { NavBarWrapper, MenuOption } from './styles';
 import scrollIntoView from 'scroll-into-view';
 import Toggle from '../Toggle/Toggle';
 import Hamburger from '../Hamburger/Hamburger';
@@ -16,7 +16,9 @@ const NavBar: React.FC<INavBarProps> = (props) => {
     const id = (ev.target as HTMLElement).title;
     props.setScroll(id);
     const elem = document.getElementById(id);
-    const offset = id === 'contact' ? 0 : 100;
+    const offset = id === 'contact' ? 0 : window.innerHeight / 8;
+
+    
 
     elem && scrollIntoView(elem, {
       align: { top: 0,

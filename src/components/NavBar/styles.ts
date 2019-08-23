@@ -4,7 +4,7 @@ import { NavBarHeader } from '../../constants/titles';
 export const NavBarWrapper = styled.div`
     background-color: ${props => props.theme.colors.NAV_BAR_BACKGROUND};
     display: flex;
-    height: 10.5vh;
+    height: 10vh;
     align-items: center;
     padding-left: 5vw;
     z-index: 5;
@@ -24,14 +24,6 @@ export const NavBarWrapper = styled.div`
     @media (max-width: 1200px) {
         height: 10.5vh;
     }
-`;
-
-export const NavBarPadding = styled.div`
-padding-top: 15vh;
-margin-top: -25vh;
-background-color: ${props => props.theme.colors.NAV_BAR_BACKGROUND};
-z-index: 3;
-
 `;
 
 interface IMenuOptionProps {

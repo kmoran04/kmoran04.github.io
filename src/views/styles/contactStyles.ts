@@ -18,7 +18,9 @@ export const LinkedinIcon = styled(Linkedin)`
     color: ${props => props.theme.colors.LINKEDIN};
     margin-bottom: 30px;
     @media (max-width: 626px) {
+        margin: 0 auto;
         margin-right: 10px;
+        margin-top: 2px;
     }
     @media (max-width: 414px) {
         height: 40px;
@@ -34,7 +36,9 @@ export const EmailIcon = styled(Mail)`
     border-radius: 5px;
     margin-bottom: 30px;
     @media (max-width: 626px) {
+        margin: 0 auto;
         margin-right: 10px;
+        margin-top: 3px;
     }
     @media (max-width: 414px) {
         height: 30px;
