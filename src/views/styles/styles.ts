@@ -86,7 +86,6 @@ export const Parallax = styled.div`
 
 export const Filler = styled.div`
     background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
-    border-top: 5px solid ${props => props.theme.colors.ACCENT_BACKGROUND};
     z-index: 3;
     height: 11vh;
     position: sticky;

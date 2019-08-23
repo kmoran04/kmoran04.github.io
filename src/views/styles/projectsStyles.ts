@@ -4,7 +4,8 @@ import { AboutWrapper } from './aboutStyles';
 export const ProjectsContentWrapper = styled.div`
     display: flex;
     flex-direction: row;
-    
+    flex-wrap: wrap;
+
     @media (max-width: 1140px) {
         flex-direction: column;
         flex-wrap: wrap;

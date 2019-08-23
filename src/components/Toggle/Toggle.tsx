@@ -20,7 +20,7 @@ const onToggle = () => {
 
   return (
       <ToggleWrapper onClick={onToggle}>
-        {isDarkMode ? <DarkIcon /> : <LightIcon />}
+        {isDarkMode ? <DarkIcon title='Light Mode'/> : <LightIcon title='Dark Mode'/>}
     </ToggleWrapper>
   );
 }

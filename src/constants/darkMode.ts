@@ -66,8 +66,9 @@ export default {
         PHOTO_SHADOW: storm,
 
         //PROJECTS
-        PROJECT_PREVIEW_OVERLAY: moonset,
+        PROJECT_PREVIEW_OVERLAY: midnight,
         PROJECT_PREVIEW_OVERLAY_TEXT: moonset,
         PROJECT_PREVIEW_TEXT_SHADOW: midnight,
+        PROJECT_PREVIEW_BORDER: dusk,
     }
 }

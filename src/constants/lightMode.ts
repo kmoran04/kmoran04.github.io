@@ -63,9 +63,10 @@ export default {
         PHOTO_SHADOW: teal,
 
         //PROJECTS
-        PROJECT_PREVIEW_OVERLAY: sand,
+        PROJECT_PREVIEW_OVERLAY: cloud,
         PROJECT_PREVIEW_OVERLAY_TEXT: sand,
         PROJECT_PREVIEW_TEXT_SHADOW: cloud,
+        PROJECT_PREVIEW_BORDER: teal,
     }
 }
 
