@@ -3,22 +3,31 @@ import { NavBarHeader } from '../../constants/titles';
 
 export const NavBarWrapper = styled.div`
     background-color: ${props => props.theme.colors.NAV_BAR_BACKGROUND};
-    height: 75px;
+    height: 10.5vh;
     display: flex;
     align-items: center;
     padding-left: 5vw;
     z-index: 5;
     transform: translate3d(0,0,0);
+    margin-top: -10.5vh;
+    box-shadow: 0px 1px 1px ${props => props.theme.colors.NAV_BAR_SHADOW};
+    width: 100vw;
     position: sticky;
     top: 15px;
-    box-shadow: 0px 1px 2px ${props => props.theme.colors.NAV_BAR_SHADOW_SAFARI};
-    box-shadow: 0px 1px 2px ${props => props.theme.colors.NAV_BAR_SHADOW};
     @media (max-width: 414px) {
         position: fixed;
         top: 0px;
         width: 100vw;
         height: 50px;
     }
+`;
+
+export const NavBarPadding = styled.div`
+padding-top: 15vh;
+margin-top: -25vh;
+background-color: ${props => props.theme.colors.NAV_BAR_BACKGROUND};
+z-index: 3;
+
 `;
 
 interface IMenuOptionProps {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { PageHeader, AboutMeWrapper } from './styles/styles';
-import { AboutWrapper, ResumeItemTitle, ResumeItemSubtitle, ResumeItemDate, ResumeItemInfo, Paragraph, PhotoWrapper, Photo } from './styles/aboutStyles';
+import { AboutWrapper, ResumeItemTitle, ResumeItemSubtitle, ResumeItemDate, ResumeItemInfo, Paragraph, PhotoWrapper, Photo, PhotoBox } from './styles/aboutStyles';
 
 const AboutMe: React.FC = () => {
   return ( 

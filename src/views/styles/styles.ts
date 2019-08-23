@@ -31,6 +31,8 @@ export const SecondaryWrapper = styled(TitleB)`
     transform: translate3d(0,0,0);
     position: sticky;
     top: 5px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     width: 100vw;
     @media (max-width: 833px) {
         font-size: 60px;
@@ -44,6 +46,8 @@ export const SecondaryWrapper = styled(TitleB)`
     }
 `;
 
+
+
 export const ClosingWrapper = styled(TitleC)`
     background-color: ${props => props.theme.colors.ACCENT_BACKGROUND};
     color: ${props => props.theme.colors.TITLE_TEXT};
@@ -51,6 +55,8 @@ export const ClosingWrapper = styled(TitleC)`
     transform: translate3d(0,0,0);
     position: sticky;
     top: 5px;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     border-top: 5px solid ${props => props.theme.colors.SUBTITLE_BACKGROUND};
     width: 100vw;
     @media (max-width: 833px) {
@@ -64,29 +70,31 @@ export const ClosingWrapper = styled(TitleC)`
     }
 `;
 
-export const Middle = styled.div`
+export const LandingPage = styled.div`
     background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
-    height: 3vh;
-    z-index: 1;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
 `;
 
 export const Parallax = styled.div`
     background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
-    z-index: 4;
+    transform: translate3d(0,0,0);
+    z-index: 2;
+    flex: 1 1 auto;
+`;
+
+export const Filler = styled.div`
+    background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
+    z-index: 3;
+    height: 11vh;
     position: sticky;
     top: 15px;
-    transform: translate3d(0,0,0);
-    height: 8vh;
-    width: 100vw;
-    
-    @media (max-width: 414px) {
-        height: 3vh;
-    }
 `;
 
 export const TopBorder = styled.div`
     background-color: ${props => props.theme.colors.TITLE_BACKGROUND};
-    position: sticky;
+    position: fixed;
     top: 0px;
     width: 100%;
     height: 5px;
@@ -104,27 +112,10 @@ export const Wrapper = styled.div`
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
-
-    ::-webkit-scrollbar {
-        width: 10px;
-    }
-    ::-webkit-scrollbar-track {
-        background-color: ${props => props.theme.colors.TRACK};    
-    }
-    ::-webkit-scrollbar-thumb {
-        background: ${props => props.theme.colors.THUMB};
-    }
-
-    @media (max-width: 414px) {
-        ::-webkit-scrollbar {
-            width: 0px;
-        }
-    }
 `;
 
 export const HomeWrapper = styled.div`
     background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -146,6 +137,7 @@ export const ProjectsWrapper = styled.div`
     transform: translate3d(0,0,0);
     width: 80vw;
     margin: auto;
+    min-height: 100vh;
 `;
 
 export const PathWrapper = styled(ProjectsWrapper)`

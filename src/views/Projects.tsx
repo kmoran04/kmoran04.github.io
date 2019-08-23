@@ -12,7 +12,7 @@ const Projects: React.FC = () => {
         <ProjectsPaddingWrapper>
           <ResumeItemTitle>Teach Me How To</ResumeItemTitle>
           <ResumeItemSubtitle>Cogo Labs Intern Hackathon, 2nd place</ResumeItemSubtitle>
-          <ProjectPreview url='https://kmoran04.github.io/TeachMeHowTo/' src='../../teachmehowto.png' hoverText='Built with TypeScript, React, and StyledComponents. Built in 9 hours.'/>
+          <ProjectPreview url='https://www.kristenemoran.com/TeachMeHowTo/' src='../../teachmehowto.png' hoverText='Built with TypeScript, React, and StyledComponents. Built in 9 hours.'/>
         </ProjectsPaddingWrapper>
         <ProjectsPaddingWrapper>
           <ResumeItemTitle>You are Hear</ResumeItemTitle>

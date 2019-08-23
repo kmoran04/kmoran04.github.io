@@ -34,8 +34,6 @@ export const ResumeBullet = styled.li`
     }
 `;
 
-//    color: ${props => props.theme.colors.PARAGRAPH_TEXT};
-
 export const Paragraph = styled(ResumeItemInfo)`
     font-size: 1.6rem;
 `;
@@ -47,20 +45,32 @@ export const AboutWrapper = styled.div`
     margin-right: 10vh;
 `;
 
-export const Photo = styled.img`
-    box-shadow: 20px 20px ${props => props.theme.colors.PHOTO_SHADOW};
-    height: 28vw;
-    margin-left: 4vw;
-    margin-bottom: 10vh;
+export const PhotoBox = styled.div`
+    width: 38vw;
+
     @media (max-width: 800px) {
-        width: 28vw;
         margin: auto;
     }
 `;
 
+export const Photo = styled.img`
+    width: 38%;
+    height: 38%;
+    box-shadow: 20px 20px ${props => props.theme.colors.PHOTO_SHADOW};
+    margin-left: 4vw;
+
+    margin-bottom: 10vh;
+    @media (max-width: 1000px) {
+        width: 38vw;
+        margin: auto;
+    }
+
+    
+`;
+
 export const PhotoWrapper = styled.div`
     display: flex;
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
         flex-direction: column;
     }
 `;

@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavBarWrapper, MenuOption } from './styles';
+import { NavBarWrapper, MenuOption, NavBarPadding } from './styles';
 import scrollIntoView from 'scroll-into-view';
 import Toggle from '../Toggle/Toggle';
 import Hamburger from '../Hamburger/Hamburger';
@@ -35,6 +35,7 @@ const NavBar: React.FC<INavBarProps> = (props) => {
   }
 
   return (
+    // <> <NavBarPadding />
     <NavBarWrapper id='navbar'>
       <MenuOption title='about' onClick={onclick} isActive={isActive('about')}>about me</MenuOption>
       <MenuOption title='projects' onClick={onclick} isActive={isActive('projects')}>projects</MenuOption>
@@ -44,6 +45,7 @@ const NavBar: React.FC<INavBarProps> = (props) => {
       <Toggle toggleDarkMode={props.toggleDarkMode}/>
       <Hamburger />
     </NavBarWrapper>
+   
   );
 }
 

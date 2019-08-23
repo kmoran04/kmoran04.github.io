@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import {  HomeWrapper, WelcomeWrapper, SecondaryWrapper, ClosingWrapper, MainLogoWrapper, PageWrapper, Parallax, Wrapper, TopBorder, Middle } from './styles/styles';
+import { HomeWrapper, WelcomeWrapper, SecondaryWrapper, ClosingWrapper, MainLogoWrapper, PageWrapper, Parallax, Wrapper, TopBorder, LandingPage, Filler, } from './styles/styles';
 import NavBar from '../components/NavBar/NavBar';
 import Projects from './Projects';
 import HowIGotHere from './HowIGotHere';
@@ -9,6 +9,8 @@ import TextLogo from '../components/TextLogo/TextLogo';
 import scrollIntoView from 'scroll-into-view';
 import Contact from './Contact';
 import Education from './Education';
+import { sand, sky, teal } from '../constants/colorConstants';
+
 
 
 interface IHomeProps {
@@ -16,7 +18,7 @@ interface IHomeProps {
 }
 
 const inView = (rect: ClientRect | DOMRect, height: number) => {
-  return rect.top >= height/2 - height;
+  return rect.top >= height / 2 - height;
 }
 
 const topView = (rect: ClientRect | DOMRect) => {
@@ -51,7 +53,42 @@ const Home: React.FC<IHomeProps> = (props) => {
   }
 
   const onScroll =
-    () => {      
+    () => {
+      const parallax = document.getElementById('parallax');
+      const filler = document.getElementById('filler');
+
+
+      const home = document.getElementById('home');
+      const welcome = document.getElementById('welcome');
+      const secondary = document.getElementById('secondary');
+      const closing = document.getElementById('closing');
+
+
+
+      if ( home && welcome && secondary && closing && parallax && filler) {
+        if (home.scrollTop + 95 < window.innerHeight) {
+          welcome.style.position = 'sticky';
+          secondary.style.position = 'sticky';
+          closing.style.position = 'sticky';
+          welcome.style.opacity = '1';
+          secondary.style.opacity = '1';
+          parallax.style.opacity = '1';
+          filler.style.opacity = '1';
+
+
+        }
+        else {
+          welcome.style.opacity = '0';
+          secondary.style.opacity = '0';
+          parallax.style.opacity = '0';
+          filler.style.opacity = '0';
+
+          closing.style.position = 'fixed';
+          closing.style.top = '5px';
+
+        }
+      }
+
       if (navBarTarget === '') {
         const projects = document.getElementById('projectsPage');
         const path = document.getElementById('pathPage');
@@ -94,21 +131,24 @@ const Home: React.FC<IHomeProps> = (props) => {
     };
 
   return (
-    
+
     <Wrapper onScroll={isSafari ? () => { } : onScroll} id='home'>
       <HomeWrapper>
         <span id='top'></span>
+        <LandingPage>
           <TopBorder />
           <MainLogoWrapper onClick={scrollTop}><TextLogo /></MainLogoWrapper>
-          <WelcomeWrapper>welcome!</WelcomeWrapper>
-          <SecondaryWrapper>i'm a front end developer.</SecondaryWrapper>
-          <ClosingWrapper>this is my website.</ClosingWrapper>
-          <Middle />
-          <Parallax />
-          <NavBar setSelected={setSelectedTab} 
-              selected={selectedTab} 
-              setScroll={setNavBarTarget} 
-              toggleDarkMode={props.toggleDarkMode} />
+          <WelcomeWrapper id='welcome'>welcome!</WelcomeWrapper>
+          <SecondaryWrapper id='secondary'>i'm a front end developer.</SecondaryWrapper>
+          <ClosingWrapper id='closing'>this is my website.</ClosingWrapper>
+          <Filler id='filler'/>
+          <Parallax id='parallax'/>
+        </LandingPage>
+        <NavBar
+          setSelected={setSelectedTab}
+          selected={selectedTab}
+          setScroll={setNavBarTarget}
+          toggleDarkMode={props.toggleDarkMode} />
 
         <PageWrapper >
           <AboutMe />
@@ -118,7 +158,7 @@ const Home: React.FC<IHomeProps> = (props) => {
           <Contact />
           <Footer />
         </PageWrapper>
-        
+
       </HomeWrapper>
     </Wrapper>
   );

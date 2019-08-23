@@ -20,23 +20,23 @@ const PRIMARY_FONT_ITALIC = 'AvenirNext-Italic';
 export const TitleA = styled.div`
     padding-left: 5vw;
     font-family: ${isFirefox ? PRIMARY_FONT_BOLD_Firefox : PRIMARY_FONT_BOLD};
-    font-size: 10rem;
+    font-size: 10vw;
     &:hover{
         cursor: default;
     }
 `;
 
 export const TitleB = styled(TitleA)`
-    font-size: 5rem;
+    font-size: 5vw;
 `;
 
 export const TitleC = styled(TitleB)`
-    font-size: 3.5rem;
+    font-size: 3.5vh;
 `;
 
 export const NavBarHeader = styled.button`
 font-family: ${isFirefox ? PRIMARY_FONT_BOLD_Firefox : PRIMARY_FONT_BOLD};
-font-size: 1.5rem;
+font-size: 1.5vw;
     text-decoration: none;
     background: none;
     border: none !important;
