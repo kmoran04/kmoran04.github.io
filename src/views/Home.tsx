@@ -9,8 +9,6 @@ import TextLogo from '../components/TextLogo/TextLogo';
 import scrollIntoView from 'scroll-into-view';
 import Contact from './Contact';
 import Education from './Education';
-import { sand, sky, teal } from '../constants/colorConstants';
-
 
 
 interface IHomeProps {
@@ -22,7 +20,7 @@ const inView = (rect: ClientRect | DOMRect, height: number) => {
 }
 
 const topView = (rect: ClientRect | DOMRect) => {
-  return rect.top >= window.innerHeight;
+  return rect.top + 50 >= window.innerHeight;
 }
 
 const Home: React.FC<IHomeProps> = (props) => {
@@ -57,13 +55,10 @@ const Home: React.FC<IHomeProps> = (props) => {
       const parallax = document.getElementById('parallax');
       const filler = document.getElementById('filler');
 
-
       const home = document.getElementById('home');
       const welcome = document.getElementById('welcome');
       const secondary = document.getElementById('secondary');
       const closing = document.getElementById('closing');
-
-
 
       if ( home && welcome && secondary && closing && parallax && filler) {
         if (home.scrollTop + 95 < window.innerHeight) {
@@ -75,7 +70,6 @@ const Home: React.FC<IHomeProps> = (props) => {
           parallax.style.opacity = '1';
           filler.style.opacity = '1';
           closing.style.height = 'initial';
-
         }
         else {
           welcome.style.opacity = '0';
@@ -86,8 +80,6 @@ const Home: React.FC<IHomeProps> = (props) => {
           closing.style.position = 'fixed';
           closing.style.top = '5px';
           closing.style.height = '10px';
-
-
         }
       }
 
