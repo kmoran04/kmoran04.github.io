@@ -16,7 +16,7 @@ interface IHomeProps {
 }
 
 const inView = (rect: ClientRect | DOMRect, height: number) => {
-  return rect.top >= height / 2 - height;
+  return rect.top >= window.innerHeight - height - 50;
 }
 
 const topView = (rect: ClientRect | DOMRect) => {
