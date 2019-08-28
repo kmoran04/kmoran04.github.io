@@ -31,6 +31,7 @@ const Home: React.FC<IHomeProps> = (props) => {
 
   const [selectedTab, setSelectedTab] = useState('');
   const [navBarTarget, setNavBarTarget] = useState('');
+  const [isTop, setIsTop] = useState(false);
 
   const findSafari = () => {
     return navigator.userAgent.indexOf('Safari') != -1 &&
@@ -62,24 +63,10 @@ const Home: React.FC<IHomeProps> = (props) => {
 
       if ( home && welcome && secondary && closing && parallax && filler) {
         if (home.scrollTop + 95 < window.innerHeight) {
-          welcome.style.position = 'sticky';
-          secondary.style.position = 'sticky';
-          closing.style.position = 'sticky';
-          welcome.style.opacity = '1';
-          secondary.style.opacity = '1';
-          parallax.style.opacity = '1';
-          filler.style.opacity = '1';
-          closing.style.height = 'initial';
+          isTop && setIsTop(false);
         }
         else {
-          welcome.style.opacity = '0';
-          secondary.style.opacity = '0';
-          parallax.style.opacity = '0';
-          filler.style.opacity = '0';
-
-          closing.style.position = 'fixed';
-          closing.style.top = '5px';
-          closing.style.height = '10px';
+          !isTop && setIsTop(true);
         }
       }
 
@@ -132,11 +119,11 @@ const Home: React.FC<IHomeProps> = (props) => {
         <LandingPage>
           <TopBorder />
           <MainLogoWrapper onClick={scrollTop}><TextLogo /></MainLogoWrapper>
-          <WelcomeWrapper id='welcome'>welcome!</WelcomeWrapper>
-          <SecondaryWrapper id='secondary'>i'm a front end developer.</SecondaryWrapper>
-          <ClosingWrapper id='closing'>this is my website.</ClosingWrapper>
-          <Filler id='filler'/>
-          <Parallax id='parallax'/>
+          <WelcomeWrapper id='welcome' isTop={isTop}>welcome!</WelcomeWrapper>
+          <SecondaryWrapper id='secondary' isTop={isTop}>i'm a front end developer.</SecondaryWrapper>
+          <ClosingWrapper id='closing' isTop={isTop}>this is my website.</ClosingWrapper>
+          <Filler id='filler' isTop={isTop}/>
+          <Parallax id='parallax' isTop={isTop}/>
         </LandingPage>
         <NavBar
           setSelected={setSelectedTab}

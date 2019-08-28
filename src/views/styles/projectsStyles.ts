@@ -15,5 +15,4 @@ export const ProjectsContentWrapper = styled.div`
 export const ProjectsPaddingWrapper = styled(AboutWrapper)`
     padding-bottom: 5vh;
     margin-bottom: 3vh;
-    padding-right: 10vw;
 `;

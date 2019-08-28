@@ -15,7 +15,6 @@ export const NavBarWrapper = styled.div`
     position: sticky;
     top: 15px;
     @media (max-width: 414px) {
-        position: fixed;
         top: 0px;
         width: 100vw;
         height: 50px;

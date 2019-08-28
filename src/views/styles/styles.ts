@@ -3,13 +3,18 @@ import { TitleA, TitleB, TitleC, Header, isFirefox } from '../../constants/title
 
 //LANDING PAGE WRAPPERS
 
-export const WelcomeWrapper = styled(TitleA)`
+interface LandingProps {
+    isTop: boolean;
+}
+
+export const WelcomeWrapper = styled(TitleA)<LandingProps>`
     padding-top: ${isFirefox ? `30vh` : `25vh`};
     z-index: 0;
     transform: translate3d(0,0,0);
     background-color: ${props => props.theme.colors.TITLE_BACKGROUND};
     color: ${props => props.theme.colors.TITLE_TEXT};
     position: sticky;
+    opacity: ${props => props.isTop ? 0 : 1};
     top: 0px;
     width: 100vw;
 
@@ -20,11 +25,10 @@ export const WelcomeWrapper = styled(TitleA)`
     @media (max-width: 414px) {
         padding-top: 44vh;
         font-size: 65px;
-        position: relative;
     }
 `;
 
-export const SecondaryWrapper = styled(TitleB)`
+export const SecondaryWrapper = styled(TitleB)<LandingProps>`
     background-color: ${props => props.theme.colors.SUBTITLE_BACKGROUND};
     color: ${props => props.theme.colors.TITLE_TEXT};
     z-index: 1;
@@ -34,6 +38,8 @@ export const SecondaryWrapper = styled(TitleB)`
     padding-top: 1vh;
     padding-bottom: 1vh;
     width: 100vw;
+    opacity: ${props => props.isTop ? 0 : 1};
+
     @media (max-width: 833px) {
         font-size: 60px;
     }
@@ -41,24 +47,25 @@ export const SecondaryWrapper = styled(TitleB)`
         padding-top: 2vh;
         padding-bottom: 2vh;
         font-size: 35px;
-        position: relative;
         margin-top: -10px;
     }
 `;
 
 
 
-export const ClosingWrapper = styled(TitleC)`
+export const ClosingWrapper = styled(TitleC)<LandingProps>`
     background-color: ${props => props.theme.colors.ACCENT_BACKGROUND};
     color: ${props => props.theme.colors.TITLE_TEXT};
     z-index: 3;
     transform: translate3d(0,0,0);
-    position: sticky;
+    position: ${props => props.isTop ? `fixed` : `sticky` };
     top: 5px;
     padding-top: 1vh;
     padding-bottom: 1vh;
     border-top: 5px solid ${props => props.theme.colors.SUBTITLE_BACKGROUND};
     width: 100vw;
+    height: ${props => props.isTop ? `10px` : `initial`};
+
     @media (max-width: 833px) {
         font-size: 40px;
     }
@@ -66,7 +73,6 @@ export const ClosingWrapper = styled(TitleC)`
         padding-top: 2vh;
         padding-bottom: 2vh;
         font-size: 30px;
-        position: relative;
     }
 `;
 
@@ -74,22 +80,26 @@ export const LandingPage = styled.div`
     background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
     height: 100vh;
     display: flex;
+
     flex-direction: column;
 `;
 
-export const Parallax = styled.div`
+export const Parallax = styled.div<LandingProps>`
     background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
     transform: translate3d(0,0,0);
     z-index: 2;
     flex: 1 1 auto;
+    opacity: ${props => props.isTop ? 0 : 1};
 `;
 
-export const Filler = styled.div`
+export const Filler = styled.div<LandingProps>`
     background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
     z-index: 3;
+    transform: translate3d(0,0,0);
     height: 11vh;
     position: sticky;
     top: 15px;
+    opacity: ${props => props.isTop ? 0 : 1};
 `;
 
 export const TopBorder = styled.div`
@@ -126,6 +136,7 @@ export const PageWrapper = styled.div`
     flex-direction: column;
     text-align: center;
     width: 100vw;
+    transform: translate3d(0,0,0);
     z-index: 2;
     background-color: ${props => props.theme.colors.PAGE_BACKGROUND};
 `;
