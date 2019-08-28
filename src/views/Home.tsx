@@ -118,7 +118,7 @@ const Home: React.FC<IHomeProps> = (props) => {
         <span id='top'></span>
         <LandingPage>
           <TopBorder />
-          <MainLogoWrapper onClick={scrollTop}><TextLogo /></MainLogoWrapper>
+          <MainLogoWrapper onClick={scrollTop} title='scroll to top'><TextLogo /></MainLogoWrapper>
           <WelcomeWrapper id='welcome' isTop={isTop}>welcome!</WelcomeWrapper>
           <SecondaryWrapper id='secondary' isTop={isTop}>i'm a software engineer.</SecondaryWrapper>
           <ClosingWrapper id='closing' isTop={isTop}>this is my website.</ClosingWrapper>
