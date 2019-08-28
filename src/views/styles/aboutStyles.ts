@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Header, DatesFont, BodyFont } from '../../constants/titles';
+import { Header, DatesFont, BodyFont, isFirefox } from '../../constants/titles';
 
 export const ResumeItemTitle = styled(Header)`
     margin-left: 4vw;
@@ -54,8 +54,8 @@ export const PhotoBox = styled.div`
 `;
 
 export const Photo = styled.img`
-    width: 38%;
-    height: 38%;
+    width: ${isFirefox ? `300%` : `38%`};
+    height: 100%;
     box-shadow: 20px 20px ${props => props.theme.colors.PHOTO_SHADOW};
     margin-left: 4vw;
 
@@ -63,6 +63,7 @@ export const Photo = styled.img`
     @media (max-width: 1000px) {
         width: 38vw;
         margin: auto;
+        margin-bottom: 10vh;
     }
 
     
