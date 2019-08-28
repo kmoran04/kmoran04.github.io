@@ -25,6 +25,7 @@ export const WelcomeWrapper = styled(TitleA)<LandingProps>`
     @media (max-width: 414px) {
         padding-top: 44vh;
         font-size: 65px;
+        position: static;
     }
 `;
 
@@ -48,6 +49,7 @@ export const SecondaryWrapper = styled(TitleB)<LandingProps>`
         padding-bottom: 2vh;
         font-size: 35px;
         margin-top: -10px;
+        position: static;
     }
 `;
 
@@ -73,6 +75,7 @@ export const ClosingWrapper = styled(TitleC)<LandingProps>`
         padding-top: 2vh;
         padding-bottom: 2vh;
         font-size: 30px;
+        position: static;
     }
 `;
 
@@ -122,6 +125,7 @@ export const Wrapper = styled.div`
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 `;
 
 export const HomeWrapper = styled.div`
