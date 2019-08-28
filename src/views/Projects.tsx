@@ -10,7 +10,7 @@ to teach the skill and planned integration with Slack make it easy \
 to reach out to a teacher and start learning!';
 
 const youAreHearDescription = 'How well do you know the music of the world? Put your skills to the test in this game, that selects the #1 song from the \
-Spotify charts in 1 of 10 countries: . Click on the capital of the country that you think the song belongs to, and see how far off you are! Working in a team of 4, I focused on the Spotify API integration, \
+Spotify charts in 1 of 9 countries: Argentina, Hong Kong, Romania, the Netherlands, Panama, Japan, New Zealand, Ireland, and the USA. Click on the capital of the country that you think the song belongs to, and see how far off you are! Working in a team of 4, I focused on the Spotify API integration, \
 and we all focused on the front end.';
 
 const tTimeDescription = 'As a student in the Boston area, the most important information is where the unreliable T is in real-time, because the schedules never \
