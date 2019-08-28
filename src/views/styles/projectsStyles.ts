@@ -8,12 +8,12 @@ export const ProjectsContentWrapper = styled.div`
 
     @media (max-width: 1140px) {
         flex-direction: column;
-        flex-wrap: wrap;
-        width: 500px;
+        width: 100%;
     }
 `;
 
 export const ProjectsPaddingWrapper = styled(AboutWrapper)`
     padding-bottom: 5vh;
     margin-bottom: 3vh;
+    padding-right: 10vw;
 `;

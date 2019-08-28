@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProjectPreviewWrapper, ProjectPhoto, ProjectPreviewOverlay } from './styles';
+import { ProjectPreviewWrapper, ProjectPhoto, ProjectPreviewOverlay, ProjectOverlayMobile } from './styles';
 
 interface IProjectPreviewProps {
     src: string;
@@ -8,12 +8,13 @@ interface IProjectPreviewProps {
 }
 
 const ProjectPreview: React.FC<IProjectPreviewProps> = (props) => {
-  return (
+  return (<>
+  <ProjectOverlayMobile>{props.hoverText}</ProjectOverlayMobile>
     <ProjectPreviewWrapper href={props.url} target='_blank'>
         <ProjectPhoto src={props.src}/>
         <ProjectPreviewOverlay>{props.hoverText}
         </ProjectPreviewOverlay>
-    </ProjectPreviewWrapper>
+    </ProjectPreviewWrapper> </>
   );
 }
 
