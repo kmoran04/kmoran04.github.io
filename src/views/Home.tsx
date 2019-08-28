@@ -105,7 +105,7 @@ const Home: React.FC<IHomeProps> = (props) => {
             setSelectedTab('contact');
           }
           else {
-            setSelectedTab('');
+            setSelectedTab('contact');
           }
         }
       }

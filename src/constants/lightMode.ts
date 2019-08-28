@@ -61,6 +61,8 @@ export default {
         RESUME_ITEM_SUBTITLE: teal,
         SIDEBAR: teal,
         PHOTO_SHADOW: teal,
+        LINK: teal,
+        LINK_HOVER: tangerine,
 
         //PROJECTS
         PROJECT_PREVIEW_OVERLAY: cloud,

@@ -38,6 +38,15 @@ export const Paragraph = styled(ResumeItemInfo)`
     font-size: 1.6rem;
 `;
 
+export const ResumeLink = styled.a`
+    color: ${props => props.theme.colors.LINK};
+    text-decoration: none!important;
+    font-weight: bold;
+    &:hover {
+        color: ${props => props.theme.colors.LINK_HOVER};
+    }
+`;
+
 export const AboutWrapper = styled.div`
     margin-top: 5vh;
     border-left: 5px solid ${props => props.theme.colors.SIDEBAR};

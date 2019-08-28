@@ -64,6 +64,8 @@ export default {
         RESUME_ITEM_SUBTITLE: storm,
         SIDEBAR: dusk,
         PHOTO_SHADOW: storm,
+        LINK: storm,
+        LINK_HOVER: dusk,
 
         //PROJECTS
         PROJECT_PREVIEW_OVERLAY: midnight,
