@@ -113,7 +113,7 @@ const Home: React.FC<IHomeProps> = (props) => {
 
   return (
 
-    <Wrapper onScroll={isSafari ? () => { } : onScroll} id='home'>
+    <Wrapper onScroll={onScroll} id='home'>
       <HomeWrapper>
         <span id='top'></span>
         <LandingPage>
