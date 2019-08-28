@@ -54,7 +54,6 @@ export const SecondaryWrapper = styled(TitleB)<LandingProps>`
 `;
 
 
-
 export const ClosingWrapper = styled(TitleC)<LandingProps>`
     background-color: ${props => props.theme.colors.ACCENT_BACKGROUND};
     color: ${props => props.theme.colors.TITLE_TEXT};
