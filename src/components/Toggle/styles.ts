@@ -3,7 +3,7 @@ import { Sunrise, Sunset } from 'styled-icons/feather';
 
 export const ToggleWrapper = styled.div`
     height: 5vw;
-    padding-top: 2vw;
+    margin-top: 2vw;
     z-index: 5;
     transform: translate3d(0,0,0);
     color: ${props => props.theme.colors.TOGGLE};
@@ -13,7 +13,7 @@ export const ToggleWrapper = styled.div`
     }
     @media (max-width: 800px) {
         height: 40px;
-        padding-top: 0px;
+        margin-top: 0px;
     }
     
 `;

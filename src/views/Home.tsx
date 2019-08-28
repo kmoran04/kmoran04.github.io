@@ -120,7 +120,7 @@ const Home: React.FC<IHomeProps> = (props) => {
           <TopBorder />
           <MainLogoWrapper onClick={scrollTop}><TextLogo /></MainLogoWrapper>
           <WelcomeWrapper id='welcome' isTop={isTop}>welcome!</WelcomeWrapper>
-          <SecondaryWrapper id='secondary' isTop={isTop}>i'm a front end developer.</SecondaryWrapper>
+          <SecondaryWrapper id='secondary' isTop={isTop}>i'm a software engineer.</SecondaryWrapper>
           <ClosingWrapper id='closing' isTop={isTop}>this is my website.</ClosingWrapper>
           <Filler id='filler' isTop={isTop}/>
           <Parallax id='parallax' isTop={isTop}/>
