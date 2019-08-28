@@ -15,7 +15,7 @@ and we all focused on the front end.';
 
 const tTimeDescription = 'As a student in the Boston area, the most important information is where the unreliable T is in real-time, because the schedules never \
 stay accurate for long. Using the Google Maps and MBTA APIs, I built a real-time T tracker that shows where every train is right now. Clicking on a T will tell you which direction it is going, and what stop it is \
-headed to. A countdown to manual refresh prevents overloading requests to the MBTA API';
+headed to. A countdown to manual refresh prevents overloading requests to the MBTA API.';
 
 const Projects: React.FC = () => {
   return ( 
