@@ -40,6 +40,12 @@ const Education: React.FC = () => {
         <ResumeItemSubtitle>Discrete Mathematics</ResumeItemSubtitle>
         <ResumeItemInfo>Sets, relations and functions, logic and methods of proof, combinatorics, graphs and digraphs.</ResumeItemInfo>
 
+        <ResumeItemSubtitle>Introduction to Computer Security</ResumeItemSubtitle>
+        <ResumeItemInfo>A systems perspective on host-based and network-based computer security, illustrated through hands-on programming projects.</ResumeItemInfo>
+
+        <ResumeItemSubtitle>Game Design</ResumeItemSubtitle>
+        <ResumeItemInfo>Processes, procedures, methodologies, and principles of game design. Managing teamwork, project scope and user experience.</ResumeItemInfo>
+
       </AboutWrapper>
 
 
