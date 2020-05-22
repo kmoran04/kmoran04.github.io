@@ -8,7 +8,7 @@ const AboutMe: React.FC = () => {
         <PageHeader id='about'>about me</PageHeader>
         <AboutWrapper>
           <PhotoWrapper>
-          <Paragraph>I’m a senior at Tufts University studying Computer Science 
+          <Paragraph>I’m a recent graduate of Tufts University with a degree in Computer Science 
             who has discovered a passion for <b>front end development</b>, through which 
             I can combine my <b>background in graphic design</b> and my <b>studies in programming</b>. 
             Formal education in design principles and <b>UI/UX</b> has strengthened my design instincts 

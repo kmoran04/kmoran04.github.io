@@ -4,6 +4,10 @@ import { AboutWrapper, ResumeItemTitle, ResumeItemSubtitle, Photo, Paragraph } f
 import { ProjectsContentWrapper, ProjectsPaddingWrapper } from './styles/projectsStyles';
 import ProjectPreview from '../components/ProjectPreview/ProjectPreview';
 
+const digitalDetoxDescription = 'Built in under 12 hours, this application is a response to the prompt of digital health. Instead of going the wearable tech route, I decided to explore how to take a break \
+from technology -- using technology. Soft music, the night sky, and no one around to read what you write offers a sanctuary in a world otherwise dominated by fights in the comments section. An antidote to social media, \
+if you will.'
+
 const teachMeDescription = 'An application that aims to connect coworkers through common interests - a peer to peer skill-sharing system. I designed and built the front end to reduce the barriers-to-entry \
 that can put people off from reaching out. A simple, friendly "teach me how to" prompt encourages the user to search for the skill they want to learn. A clean display of coworkers who have volunteered \
 to teach the skill and planned integration with Slack make it easy \
@@ -22,6 +26,14 @@ const Projects: React.FC = () => {
     <ProjectsWrapper id='projectsPage'>
         <PageHeader id='projects'>projects</PageHeader>
         <ProjectsContentWrapper>
+
+        <ProjectsPaddingWrapper>
+          <ResumeItemTitle>Digital Detox</ResumeItemTitle>
+          <ResumeItemSubtitle>Personal project</ResumeItemSubtitle>
+          <Paragraph>{digitalDetoxDescription}</Paragraph>
+          <ProjectPreview url='https://www.kristenemoran.com/DigitalDetox/' src='../../digitaldetox.png' hoverText='Built with TypeScript, React, and StyledComponents. Built in under 12 hours.'/>
+        </ProjectsPaddingWrapper>
+
         <ProjectsPaddingWrapper>
           <ResumeItemTitle>Teach Me How To</ResumeItemTitle>
           <ResumeItemSubtitle>Cogo Labs Intern Hackathon, 2nd place</ResumeItemSubtitle>

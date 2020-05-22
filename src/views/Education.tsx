@@ -7,10 +7,10 @@ const Education: React.FC = () => {
     <EducationWrapper id='educationPage'>
       <PageHeader id='education'>education</PageHeader>
       <AboutWrapper>
-        <ResumeItemTitle>BS, Computer Science</ResumeItemTitle>
+        <ResumeItemTitle>BA, Computer Science</ResumeItemTitle>
         <ResumeItemSubtitle>Tufts University</ResumeItemSubtitle>
-        <ResumeItemDate>Degree expected May 2020</ResumeItemDate>
-        <ResumeItemInfo>GPA: 3.76/4.0</ResumeItemInfo>
+        <ResumeItemDate>May 2020</ResumeItemDate>
+        <ResumeItemInfo>Honors: <em>magna cum laude</em></ResumeItemInfo>
       </AboutWrapper>
 
       <AboutWrapper>
@@ -35,7 +35,10 @@ const Education: React.FC = () => {
         <ResumeItemInfo>Structure of machine-level data and code, including memory, cache, registers, machine arithmetic, and bitwise operations.</ResumeItemInfo>
 
         <ResumeItemSubtitle>Programming Languages</ResumeItemSubtitle>
-        <ResumeItemInfo> Emphasizes ideas and techniques most relevant to practitioners, but includes foundations crucial for intellectual rigor: abstract syntax, lambda calculus, type systems, dynamic semantics.</ResumeItemInfo>
+        <ResumeItemInfo>Emphasizes ideas and techniques most relevant to practitioners, but includes foundations crucial for intellectual rigor: abstract syntax, lambda calculus, type systems, dynamic semantics.</ResumeItemInfo>
+
+        <ResumeItemSubtitle>Computation Theory</ResumeItemSubtitle>
+        <ResumeItemInfo>Models of computation: Turing machines, pushdown automata, and finite automata. Grammars and formal languages, including context-free languages and regular sets. Important problems, including the halting problem and language equivalence theorems.</ResumeItemInfo>
 
         <ResumeItemSubtitle>Discrete Mathematics</ResumeItemSubtitle>
         <ResumeItemInfo>Sets, relations and functions, logic and methods of proof, combinatorics, graphs and digraphs.</ResumeItemInfo>
