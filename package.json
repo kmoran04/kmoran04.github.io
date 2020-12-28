@@ -13,7 +13,7 @@
     "@types/react-dom": "16.8.5",
     "@types/react-tooltip": "^3.11.0",
     "@types/scroll-into-view": "^1.6.7",
-    "@types/styled-components": "^4.4.3",
+    "@types/styled-components": "^5.1.7",
     "gh-pages": "^2.2.0",
     "overlayscrollbars": "^1.12.0",
     "react": "^16.13.1",
