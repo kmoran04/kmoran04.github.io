@@ -19,12 +19,12 @@
     "react": "^16.13.1",
     "react-custom-scroll": "^4.2.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.1.1",
+    "react-scripts": "^3.4.4",
     "react-tooltip": "^3.11.6",
     "scroll-into-view": "^1.14.2",
     "styled-components": "^4.4.1",
     "styled-icons": "^8.6.0",
-    "typescript": "3.5.3"
+    "typescript": "^3.8"
   },
   "scripts": {
     "start": "react-scripts start",

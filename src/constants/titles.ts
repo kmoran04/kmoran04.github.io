@@ -26,12 +26,22 @@ export const TitleA = styled.div`
     }
 `;
 
-export const TitleB = styled(TitleA)`
+export const TitleB = styled.div`
+    padding-left: 5vw;
+    font-family: ${isFirefox ? PRIMARY_FONT_BOLD_Firefox : PRIMARY_FONT_BOLD};
     font-size: 5vw;
+    &:hover{
+        cursor: default;
+    }
 `;
 
-export const TitleC = styled(TitleB)`
+export const TitleC = styled.div`
+    padding-left: 5vw;
+    font-family: ${isFirefox ? PRIMARY_FONT_BOLD_Firefox : PRIMARY_FONT_BOLD};
     font-size: 3.5vw;
+    &:hover{
+        cursor: default;
+    }
 `;
 
 export const NavBarHeader = styled.button`
