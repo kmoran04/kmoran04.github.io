@@ -19,7 +19,7 @@ const HowIGotHere: React.FC = () => {
 
         <ResumeItemTitle>Lead Graphic Designer</ResumeItemTitle>
         <ResumeItemSubtitle>TUSC Marketing at Tufts University</ResumeItemSubtitle>
-        <ResumeItemDate>May 2017 - present</ResumeItemDate>
+        <ResumeItemDate>May 2017 - May 2020</ResumeItemDate>
         <ResumeItemInfo><ul>
           <ResumeBullet>Collaborated constantly with other sub-groups of TUSC (Tufts University Social Collective) to create advertising and marketing plans for 100+ events for all 5000+ students</ResumeBullet>
           <ResumeBullet>Defined the visual brand of TUSC during the rebrand period, setting guidelines for other graphic designers and social media managers</ResumeBullet>
