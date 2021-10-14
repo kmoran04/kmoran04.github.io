@@ -38,6 +38,12 @@ export const Paragraph = styled(ResumeItemInfo)`
     font-size: 1.6rem;
 `;
 
+export const EmphasisText = styled.p`
+    color: ${props => props.theme.colors.LINK_HOVER};
+    font-weight: bold;
+    display: inline;
+`;
+
 export const ResumeLink = styled.a`
     color: ${props => props.theme.colors.LINK};
     text-decoration: none!important;

@@ -40,20 +40,6 @@ const Projects: React.FC = () => {
           <Paragraph>{teachMeDescription}</Paragraph>
           <ProjectPreview url='https://www.kristenemoran.com/TeachMeHowTo/' src='../../teachmehowto.png' hoverText='Built with TypeScript, React, and StyledComponents. Built in 9 hours.'/>
         </ProjectsPaddingWrapper>
-
-        <ProjectsPaddingWrapper>
-          <ResumeItemTitle>You are Hear</ResumeItemTitle>
-          <ResumeItemSubtitle>Web Programming Final Project</ResumeItemSubtitle>
-          <Paragraph>{youAreHearDescription}</Paragraph>
-          <ProjectPreview url='http://secure-temple-37776.herokuapp.com' src='../../youarehear.png' hoverText='Built with Javascript, HTML, and CSS. With the Spotify and Google Map API.'/>
-        </ProjectsPaddingWrapper>
-
-        <ProjectsPaddingWrapper>
-          <ResumeItemTitle>T Time</ResumeItemTitle>
-          <ResumeItemSubtitle>OOP for GUIs Final Project</ResumeItemSubtitle>
-          <Paragraph>{tTimeDescription}</Paragraph>
-          <ProjectPreview url='https://www.kristenemoran.com/T-Time/' src='../../ttime.png' hoverText='Built with Javascript, HTML, and CSS. With the Google Maps and MBTA API.'/>
-        </ProjectsPaddingWrapper>
         </ProjectsContentWrapper>
     </ProjectsWrapper>
   );
